@@ -28,10 +28,10 @@
           <a href="tech.html" class="navbar_links" target="_blank">Tech</a>
         </li>
         <li class="navbar_item">
-          <a href="admin_index.php" class="navbar_links">Admin</a>
+          <a href="" class="navbar_links">Products</a>
         </li>
         <li class="navbar_btn">
-          <a href="signup.php" class="button">Sign Up</a>
+          <a href="index.html" class="button">Logout</a>
         </li>
     </div>
   </nav>
@@ -40,15 +40,14 @@
   <div class="main">
     <div class="main_container">
       <div class="main_content">
-        <h1>ISRAEL GENERATION</h1>
-          <h2>TECHNOLOGY</h2>
-          <p>See what makes us different.</p>
-          <button class="main_btn">
-            <a href="signup.php">Get Started</a>
-          </button>
+        <h1>WELCOME</h1>
+        <h2>TO TECH VILLAGE</h2>
+        <button class="main_btn">
+          <a href="">Navigate</a>
+        </button>
       </div>
       <div class="main_img-container">
-        <img src="pic1.svg" alt="pic" id="main_img">
+        <img src="images/pic1.svg" alt="pic" id="main_img">
       </div>
     </div>
   </div>
@@ -60,12 +59,12 @@
       <div class="services_card">
         <h2>Experience Bliss</h2>
         <p>AI Powered Technology</p>
-        <button>Get Started</button>
+        <button>Navigate</button>
       </div>
       <div class="services_card">
         <h2>Are You Ready?</h2>
         <p>Take The Leap!</p>
-        <button>Get Started</button>
+        <button>Navigate</button>
       </div>
     </div>
   </div>
@@ -135,9 +134,7 @@
       </div>
     </div>
   </div>
-  
-  <script type="text/javascript" charset="utf-8">
-    script.js
-  </script>
+
+  <script src="app.js"></script>
 </body>
 </html>

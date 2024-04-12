@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ISRAEL TECH</title>
+  <title>WELCOME SWNIGER</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&family=League+Spartan:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -13,7 +13,7 @@
   <nav class="navbar">
     <div class="navbar_container">
       <a href="" id="navbar_logo">
-        <i class="fas fa-gem"></i>ISRAEL
+        <i class="fas fa-gem"></i>SWING
       </a>
       <div class="navbar_toggle" id="mobile-menu">
         <span class="bar"></span>
@@ -40,14 +40,14 @@
   <div class="main">
     <div class="main_container">
       <div class="main_content">
-        <h1>WELCOME</h1>
-        <h2>TO TECH VILLAGE</h2>
+        <h1>WELCOME TO</h1>
+        <h2>TECH VILLAGE</h2>
         <button class="main_btn">
           <a href="">Navigate</a>
         </button>
       </div>
       <div class="main_img-container">
-        <img src="images/pic1.svg" alt="pic" id="main_img">
+        <img src="pic1.svg" alt="pic" id="main_img">
       </div>
     </div>
   </div>
@@ -111,9 +111,9 @@
     <div class="social_media">
       <div class="social_media-wrap">
         <div class="footer_logo">
-          <a href="/" id="footer_logo"><i class="fas fa-gem"></i>ISRAEL</a>
+          <a href="/" id="footer_logo"><i class="fas fa-gem"></i>SWING</a>
         </div>
-        <p class="website_rights">© ISRAEL 2020. All rights reserved</p>
+        <p class="website_rights">© SWING 2020. All rights reserved</p>
         <div class="social_icon">
           <a href="/" class="social_icon-link" target="_blank">
             <i class="fab fa-facebook"></i>
@@ -135,6 +135,6 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SIGNUP SECTION</title>
+    <title>SWING TECH</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&family=League+Spartan:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -11,7 +11,7 @@
     <nav class="navbar">
       <div class="navbar_container">
         <a href="index.html" id="navbar_logo">
-          <i class="fas fa-gem"></i>ISRAEL
+          <i class="fas fa-gem"></i>SWING
         </a>
         <div class="navbar_toggle" id="mobile-menu">
           <span class="bar"></span>
@@ -23,7 +23,7 @@
             <a href="index.html" class="navbar_links">Home</a>
           </li>
           <li class="navbar_item">
-            <a href="tech.html" class="navbar_links" target="_blank">Tech</a>
+            <a href="tech.html" class="navbar_links">Tech</a>
           </li>
           <li class="navbar_item">
             <a href="" class="navbar_links">Products</a>
@@ -45,11 +45,11 @@
             <?php } ?>
             <div class="uname">
               <label>User Name</label>
-              <input type="text" name="uname" placeholder="User Name">
+              <input class="options" type="text" name="uname" placeholder="User Name">
             </div>
             <div class="uname">
               <label>Password</label>
-              <input type="password" name="password" placeholder="Password">
+              <input class="options" type="password" name="password" placeholder="Password">
             </div>
             <button type="submit" class="main_btn">Login</button>
           </form>
@@ -60,9 +60,6 @@
       </div>
     </div>
     
-      <script type="text/javascript" charset="utf-8">
-    app.js
-  </script>
-    
+    <script src="script.js"></script>
   </body>
 </html>

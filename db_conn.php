@@ -1,5 +1,4 @@
 <?php
-
   $sname = "localhost";
   $uname = "root";
   $password = "";
@@ -10,6 +9,5 @@
 
   if(!$conn) {
     echo "Connection Failed";
-  }
-
+  };
 ?>

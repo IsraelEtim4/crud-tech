@@ -2,30 +2,40 @@
   // link with config.php to connect to the database
   include "config.php";
 
-  // Checking if the form are retest
+  // Checking if the submit button on the form is pressed.
   if(isset($_POST['submit'])) {
+    // The fields required to be sent to the database
     $first_name = $_POST['firstname'];
     $last_name = $_POST['lastname'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $gender = $_POST['gender'];
 
-    $sql = "INSERT INTO `users` (`firstname`, `lastname`, `email`, `password`) VALUES ('$first_name', '$last_name', '$email', '$password')";
+    // the sql query
+    $sql = "INSERT INTO `users` (`firstname`, `lastname`, `email`, `password`, `gender`) VALUES ('$first_name', '$last_name', '$email', '$password', '$gender')";
+    // The code to enter the values into the database is now complete.
 
+    // To execute the query
     $result = $conn->query($sql);
       
+    // If the record are created
     if($result == TRUE) {
-      echo "New record created successfully";
+      // It will display below message
+      // echo "New record created successfully";
+      header("Location: welcome.php");
+      exit();
     }
+    // Incase of an error, it will show an error message
     else {
       echo "Error:" . $sql . "<br>". $conn->error;
     }
 
+    // Close the connection
     $conn->close();
   }
-
-  // 
 ?>
 
+<!-- Then create our html form -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,26 +77,36 @@
     <!-- Signup Section -->
     <div class="main">
       <div class="main_container">
-        <div class="main_content">
-          <form action="welcome.php" method="POST">
+        <div class="signup_content">
+          <form action="" method="POST">
             <h2> Personal Data </h2>
             <div class="uname">
               <label for="">First Name</label>
-              <input type="text" name="firstname">
+              <input class="options" type="text" name="firstname">
             </div>
             <div class="uname">
               <label for="">Last Name</label>
-              <input type="text" name="lastname">
+              <input class="options" type="text" name="lastname">
             </div>
             <div class="uname">
               <label for="">Email</label>
-              <input type="email" name="email">
+              <input class="options" type="email" name="email">
             </div>
             <div class="uname">
               <label for="">Password</label>
-              <input type="password" name="password">
+              <input class="options" type="password" name="password">
             </div>
-            <button type="submit" class="main_btn" value="submit">Sign Up</button>
+            <div class="uname">
+              <label for="">Gender</label>
+              <div class="radio-button">
+                <label for="gender-male">Male</label>
+                <input type="radio" name="gender" value="Male"> 
+
+                <label for="gender-female">Female</label>
+                <input type="radio" name="gender" value="Female">
+              </div>
+            </div>
+            <button type="submit" class="main_btn" value="submit" name="submit">Sign Up</button>
           </form>      
         </div>
         <div class="main_img-container">
@@ -95,8 +115,6 @@
       </div>
     </div>
     
-      <script type="text/javascript" charset="utf-8">
-    app.js
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>

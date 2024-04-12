@@ -17,7 +17,7 @@
     <nav class="navbar">
       <div class="navbar_container">
         <a href="index.html" id="navbar_logo">
-          <i class="fas fa-gem"></i>ISRAEL
+          <i class="fas fa-gem"></i>SWING
         </a>
         <div class="navbar_toggle" id="mobile-menu">
           <span class="bar"></span>
@@ -115,9 +115,9 @@
       <div class="social_media">
         <div class="social_media-wrap">
           <div class="footer_logo">
-            <a href="/" id="footer_logo"><i class="fas fa-gem"></i>ISRAEL</a>
+            <a href="/" id="footer_logo"><i class="fas fa-gem"></i>SWING</a>
           </div>
-          <p class="website_rights">© ISRAEL 2020. All rights reserved</p>
+          <p class="website_rights">© SWING 2020. All rights reserved</p>
           <div class="social_icon">
             <a href="/" class="social_icon-link" target="_blank">
               <i class="fab fa-facebook"></i>
@@ -139,9 +139,7 @@
       </div>
     </div>
 
-  <script type="text/javascript" charset="utf-8">
-    script.js
-  </script>
+  <script src="script.js"></script>
   </body>
   </html>
 
